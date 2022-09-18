@@ -7,9 +7,11 @@ import Coin from './Coin';
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
-  
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true' 
+
+
   useEffect(() => {
-    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true').then(res => {
+    axios.get(url).then(res => {
       setCoins(res.data);
     }).catch(error => console.log(error));
   }, []);
@@ -39,8 +41,10 @@ function App() {
           name={coin.name}
           image={coin.image}
           symbol={coin.symbol}
-          volume={coin.market_cap}
+          marketcap={coin.market_cap}
           price={coin.current_price}
+          priceChange={coin.price_change_percentage_24h}
+          volume={coin.total_volume}
           />
         )
       })}
