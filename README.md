@@ -1,3 +1,14 @@
+This is going to be a cryptocurrency market analysis website. For now it includes basic information about the top 100 cryptocurriences such as price, daily volume, price change and market cap. Further updates are coming that will include more data analysis features for each cryptocurrency as well as general market. 
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
