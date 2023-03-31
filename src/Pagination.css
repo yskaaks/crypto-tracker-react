@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.pagination-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-size: 14px;
+  border-radius: 50%; /* Add this line to make the button circular */
+  width: 32px; /* Add this line to set a fixed width */
+  height: 32px; /* Add this line to set a fixed height */
+  line-height: 16px; /* Add this line to align the text vertically */
+  text-align: center; /* Add this line to align the text horizontally */
+}
+
+
+.pagination-info {
+  margin: 0 16px;
+}
+
+
+.pagination-button.active {
+    background-color: #7918f2;
+    color: #fff;
+}
