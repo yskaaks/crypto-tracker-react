@@ -62,7 +62,7 @@ useEffect(() => {
           className='coin-input' onChange={handleChange}/>
         </form>
       </div>
-
+      <TableHeader />
       {paginatedCoins.map(coin => {
         return (
           <Coin

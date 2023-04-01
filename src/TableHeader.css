@@ -1,14 +1,39 @@
 .table-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* Change this from 'space-between' to 'center' */
     align-items: center;
     background-color: #6c41ec;
-    padding: 8px 16px;
+    padding: 8px 0;
     border-radius: 4px;
     margin-bottom: 16px;
+    width: 900px;
+    /* Add this line to set the width equal to the table width */
+}
+
+.header-name,
+.header-ticker {
+    width: 300px;
+}
+
+.header-price {
+    width: 110px;
+}
+
+.header-volume {
+    width: 155px;
+}
+
+.header-price-change {
+    width: 100px;
+}
+
+.header-market-cap {
+    width: 230px;
 }
 
 .table-header>div {
     color: #ffffff;
     font-weight: bold;
+    /* Add this line to align text to the right */
 }
