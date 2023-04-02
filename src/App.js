@@ -26,7 +26,7 @@ useEffect(() => {
     }
   };
   fetchData();
-}, []);
+}, [currentPage]);
 
   const handleChange = e => {
     setSearch(e.target.value)
@@ -41,7 +41,9 @@ useEffect(() => {
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
   };
-  const totalPages = 5; // Total number of pages (100 cryptos / 20 per page)
+  
+  const itemsPerPage = 20;
+  const totalPages = Math.ceil(filteredCoins.length / itemsPerPage);
 
   const paginateResults = (results) => {
     const startIndex = (currentPage - 1) * 20;

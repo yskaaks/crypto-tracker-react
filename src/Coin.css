@@ -13,8 +13,17 @@
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
     width: 900px;
-    transition: box-shadow 0.3s ease-in-out; /* Add this line to enable smooth transition */
+    transition: box-shadow 0.3s ease-in-out;
     font-family: 'Space Grotesk', sans-serif;
+    margin: 0 auto;
+    /* Add this line to center the coin row */
+}
+
+.coin-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
 }
 
 .coin-search {
@@ -31,6 +40,7 @@
     align-items: center;
     padding-right: 24px;
     min-width: 300px;
+    text-align: center;
 }
 
 .coin h1 {
@@ -57,18 +67,26 @@
 
 .coin-price {
     width: 110px;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .coin-volume {
     width: 155px;
+    text-align: center;
+    /* Add this line */
 }
 
 .coin-marketcap {
     width: 230px;
+    text-align: center;
+    /* Add this line */
 }
 
 .coin-percent {
     width: 100px;
+    text-align: center;
+    /* Add this line */
 }
 
 .red {
