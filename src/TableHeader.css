@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6c41ec;
+    background-image: linear-gradient(-225deg,
+            #ac32e4 0%,
+            #7918f2 48%,
+            #4801ff 100%);
     padding: 8px 0;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -11,35 +14,39 @@
     /* Add this line to center the table header */
 }
 
-.header-name,
-.header-ticker {
+.header-coin-ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-    text-align: center;
-    /* Add this line */
+}
+.header-coin-ticker>div {
+    background-color: transparent;
+}
+
+.header-coin {
+    width: 220px;
+}
+
+.header-ticker {
+    width: 80px;
 }
 
 .header-price {
     width: 110px;
-    text-align: center;
-    /* Add this line */
 }
 
 .header-volume {
     width: 155px;
-    text-align: center;
-    /* Add this line */
 }
 
 .header-price-change {
     width: 100px;
-    text-align: center;
-    /* Add this line */
+    
 }
 
 .header-market-cap {
     width: 230px;
-    text-align: center;
-    /* Add this line */
 }
 
 .table-header>div {

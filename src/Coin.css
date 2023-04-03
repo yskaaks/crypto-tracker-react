@@ -8,15 +8,14 @@
 .coin-row {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+    /* Update this line to space-between to distribute the elements evenly */
     align-items: center;
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
     width: 900px;
     transition: box-shadow 0.3s ease-in-out;
     font-family: 'Space Grotesk', sans-serif;
-    margin: 0 auto;
-    /* Add this line to center the coin row */
 }
 
 .coin-content {
@@ -38,9 +37,8 @@
 .coin {
     display: flex;
     align-items: center;
-    padding-right: 24px;
-    min-width: 300px;
-    text-align: center;
+    flex: 1;
+    /* Add this line to make the element grow according to its content */
 }
 
 .coin h1 {
@@ -61,8 +59,9 @@
 .coin-data {
     display: flex;
     text-align: right;
-    justify-content: space-between;
+    justify-content: space-between; /* Add this line to distribute the elements inside the data container evenly */
     width: 100%;
+    flex: 3; /* Add this line to make the element grow according to its content */
 }
 
 .coin-price {
@@ -100,3 +99,4 @@
 .coin-row:hover {
   box-shadow: 0 0 10px #fff; /* Add this line to create the glow effect */
 }
+
